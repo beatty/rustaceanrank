@@ -29,7 +29,7 @@ if __name__ == "__main__":
         pr_crates = nx.pagerank(G)
 
     user_meta = {}
-    with open('/tmp/crates_users.csv') as f:
+    with open('/tmp/users.csv') as f:
         logging.info("reading crate graph")
         for line in csv.reader(f.readlines()):
             user_meta[line[0]] = {"gh":line[0], "name":line[1], "image_url":line[2]}

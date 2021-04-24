@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <script src="https://antelope.johndbeatty.com/script.js" data-site="OELNRARP" defer></script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="RustaceanRank: PageRank over the graph of Rust crates and their owners.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>RustaceanRank | John Beatty</title>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@john_d_beatty">
@@ -44,7 +51,7 @@
 {{#users}}
 <div class="media">
     <div class="media-left">
-        <a href="https://github.com/{{gh}}"><img class="image is-rounded is-96x96" src="{{image_url}}"></a>
+        <a href="https://github.com/{{gh}}"><figure class="image is-96x96"><img class="is-rounded" src="{{image_url}}"></figure></a>
     </div>
     <div class="media-content">
         <p class="is-size-5 has-text-weight-bold">{{rank}}. {{name}}</p>
