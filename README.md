@@ -7,7 +7,7 @@ Note: this is throwaway code. I'm purely making it available for transparency in
 This is just a fun little way to explore Rustaceans and crates. I'm personally just using it to find very good Rustaceans to work on a new project.
 
 How to run:
-1. Download the crates database archive.
+1. Download the crates database archive at https://crates.io/data-access.
 1. Run "psql crates < crates.sql"
 1. Install dependencies. e.g. pip3 install -r requirements.txt
 1. Run python rustaceanrank.py
