@@ -20,10 +20,27 @@
     <meta name="twitter:image" content="https://www.rustacean.net/assets/rustacean-flat-happy.png">
 <body>
 
+<header>
+<nav class=navbar role=navigation><div class=container><div class=navbar-brand><a href=/ title=home class=navbar-item><span class=logo><h1>John Beatty</h1></span></a><a href=https://twitter.com/john_d_beatty class="navbar-item fa-lg" title=Twitter><span class=icon><i class="fab fa-twitter"></i></span></a><a href=https://www.linkedin.com/in/johndbeatty/ class="navbar-item fa-lg" title=LinkedIn><span class=icon><i class="fab fa-linkedin"></i></span></a><a href=https://github.com/beatty class="navbar-item fa-lg" title=GitHub><span class=icon><i class="fab fa-github"></i></span></a><a href=/about class=navbar-item>About</a>
+<a href=https://johndbeatty.substack.com/ class=navbar-item>Mailing List</a></div></div></nav>
+</header>
+
 <section class="section">
-    <div class="columns">
-        <div class="column is-half">
-            <h2 class="is-size-3">RustaceanRank</h2>
+<div class="container">
+    <h2 class="is-size-3">RustaceanRank</h2>
+
+    <article class="message is-info">
+    <div class="message-body">
+        <div><strong>Note:</strong> This is a list of Rust crate owners scored by <a href="https://en.wikipedia.org/wiki/PageRank">PageRank</a> over the  Rust crate owner dependency graph (e.g. the edges of the graph are (user)--[owns]-->(crate)-->[depends on]-->(crate)--[owned by]-->(user). The scores are raw PageRank scores (i.e. if you add them up, they'll approach 1.0). The code to generate this page is at <a href="https://github.com/beatty/rustaceanrank">github.com/beatty/rustaceanrank</a>. The data was supplied by the <a href="https://crates.io">crates.io</a> <a href="https://crates.io/data-access">database dump</a> (as of 23 Apr 2021).</div>
+    </div>
+    </article>
+
+    <article class="message is-success">
+    <div class="message-body">
+        <div><strong>p.s. I'm recruiting world-class software engineers, machine learning experts, data scientists, social epistimologists, and economists to build a new kind of search and discovery product.</strong> I fell in love with Rust while CEO at <a href="https://www.clover.com">Clover</a>, where I was wishing we had a better language than C for our secure microcontrollers in our payment devices. Email <a href="mailto:internet@johndbeatty.com">me@johndbeatty.com</a> if you're interested. Virtually anywhere in the world is great -- we're a fully remote team. You can read more <a href="/about">about me</a>.</div>
+    </div>
+    </article>
+
 {{#users}}
 <div class="media">
     <div class="media-left">
@@ -38,11 +55,7 @@
 </div>
 {{/users}}
 
-        </div>
-        <div class="column is-half">
-            <h2 class="is-size-3">About</h2>
-        </div>
-    </div>
+</div>
 
 </body>
 </html>

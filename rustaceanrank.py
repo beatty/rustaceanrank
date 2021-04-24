@@ -64,7 +64,7 @@ if __name__ == "__main__":
         user['crates'] = []
         crate_list = user_crates[u[0]]
         user['crate_count'] = len(crate_list)
-        user['crate_more'] = "... and %s more" % (len(crate_list)-10) if len(crate_list) > 0 else ""
+        user['crate_more'] = "... and %s more" % (len(crate_list)-10) if len(crate_list) > 10 else ""
         for crate in crate_list[0:10]:
             user['crates'].append({"name": crate})
 
