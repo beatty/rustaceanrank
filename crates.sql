@@ -5,7 +5,7 @@ INNER JOIN users u1 ON (u1.id=co1.owner_id AND co1.owner_kind=0)
 INNER JOIN dependencies d ON d.crate_id=c1.id
 INNER JOIN versions ON d.version_id=versions.id
 INNER JOIN crates c2 ON versions.crate_id=c2.id
-INNER JOIN crate_owners co2 ON co2.owner_id=c2.id
+INNER JOIN crate_owners co2 ON co2.crate_id=c2.id
 INNER JOIN users u2 ON (u2.id=co2.owner_id AND co2.owner_kind=0))
 TO '/tmp/user-graph.csv' (format csv, delimiter ',');
 
@@ -16,7 +16,7 @@ INNER JOIN users u1 ON (u1.id=co1.owner_id AND co1.owner_kind=0)
 INNER JOIN dependencies d ON d.crate_id=c1.id
 INNER JOIN versions ON d.version_id=versions.id
 INNER JOIN crates c2 ON versions.crate_id=c2.id
-INNER JOIN crate_owners co2 ON co2.owner_id=c2.id
+INNER JOIN crate_owners co2 ON co2.crate_id=c2.id
 INNER JOIN users u2 ON (u2.id=co2.owner_id AND co2.owner_kind=0)
 WHERE c1.repository not like 'https://github.com/rust-lang/%')
 TO '/tmp/user-graph-not-rust-lang.csv' (format csv, delimiter ',');
